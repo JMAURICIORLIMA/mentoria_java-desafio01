@@ -1,7 +1,8 @@
 package desafio01.principal;
 
 import desafio01.dominio.Candidatos;
-import desafio01.dominio.Votar;
+import desafio01.dominio.Eleitor;
+import desafio01.dominio.SomaVoto;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,9 +16,8 @@ public class Principal {
         c2.cadastroEleitor();
 
 
-        Votar eleito1 = new Votar();
-        eleito1.verificaTitulo();
-
+        Eleitor eleitor = new Eleitor();
+        eleitor.verificaTitulo();
 
     }
 }

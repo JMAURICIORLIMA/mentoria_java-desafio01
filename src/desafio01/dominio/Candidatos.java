@@ -7,6 +7,8 @@ public class Candidatos {
     private String partido;
     private String sigla;
     private String numeroCandidato;
+    private int recebeVoto;
+    private Eleitor eleitor;
 
     Scanner sc = new Scanner(System.in);
 
@@ -35,4 +37,22 @@ public class Candidatos {
                 this.numeroCandidato);
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNumeroCandidato() {
+        return numeroCandidato;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    protected void setRecebeVoto(int voto){
+        this.recebeVoto = voto;
+    }
+    public int getRecebeVoto(){
+        return recebeVoto;
+    }
 }
