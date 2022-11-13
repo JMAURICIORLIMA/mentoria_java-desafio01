@@ -1,5 +1,6 @@
 package desafio02.teste;
 
+import desafio02.dominio.reinoanimal.Animal;
 import desafio02.dominio.reinoanimal.sanguefrio.peixes.Salmao;
 import desafio02.dominio.reinoanimal.sanguefrio.repteis.Crocodilo;
 import desafio02.dominio.reinoanimal.sanguequente.aves.Ave;
@@ -11,22 +12,23 @@ import desafio02.dominio.reinoanimal.sanguequente.mamiferos.Urso;
 
 public class AnimalTeste {
     public static void main(String[] args) {
-        Ave ave = new Ave();
+        Animal ave = new Ave();
         Avestruz avestruz = new Avestruz();
 
-        Mamifero mamifero = new Mamifero();
+        Animal mamifero = new Mamifero();
         Urso urso = new Urso();
 
-        Peixe peixe = new Peixe();
+        Animal peixe = new Peixe();
         Salmao salmao = new Salmao();
 
-        Reptil reptil = new Reptil();
+        Animal reptil = new Reptil();
         Crocodilo crocodilo = new Crocodilo();
 
 
         mamifero.visaoGeral();
 
         urso.setTempoDeVida("* Tempo médio de vida entre 25 a 40 anos");
+
         urso.setRevertimentoCorporal("* Revestimento corporal - pelos curtos");
         urso.setHibernar(true);
         urso.visaoGeral();

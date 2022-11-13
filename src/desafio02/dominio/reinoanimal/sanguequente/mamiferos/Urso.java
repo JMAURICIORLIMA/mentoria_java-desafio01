@@ -1,8 +1,8 @@
 package desafio02.dominio.reinoanimal.sanguequente.mamiferos;
 
 public class Urso extends Mamifero {
-    private String tempoDeVida;
-    private boolean hibernar;
+    protected String tempoDeVida;
+    protected boolean hibernar;
 
     public Urso() {
     }
